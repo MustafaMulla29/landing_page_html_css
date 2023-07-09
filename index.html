@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <script src="js/burger.js"></script> -->
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <nav class="navbar height-resp">
+        <h2 class="heading">Saita Workspace</h2>
+        <ul class="nav-list visibility-resp">
+            <li class="right-nav"><a href="">Home</a></li>
+            <li class="right-nav"><a href="">About</a></li>
+            <li class="right-nav"><a href="">Work</a></li>
+            <li class="right-nav"><a href="">Services</a></li>
+            <li class="right-nav"><a href="">Pricing</a></li>
+            <li class="right-nav"><a href="">Blog</a></li>
+            <li class="right-nav"><a href="">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="main-box">
+            <div class="first-half">
+                <h1 class="text-big">We Are Digital Agency Helping Boosting Your Sales</h1>
+                <para class="text-small">A small river named Dudan flows by their place and supplies it with the
+                    necessary
+                    regilialia
+                </para>
+                <div class="buttons">
+                    <button class="btn">Start Project</button>
+                    <button class=" btn">Watch video</button>
+                </div>
+            </div>
+            <div class="second-half">
+                <div class="image"><img src="img/pexels-zen-chung-5745171-removebg-preview.png" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="boxes">
+        <div class="box box1">
+            <img src="img/grow-removebg-preview.png" alt="" class="img">
+            <h4 class="content mg-top">We have experience for your project</h4>
+            <p class="content">Far far away, behing the world mountains, far from the countries vokalia</p>
+        </div>
+        <div class="box box2">
+            <img src="img/timeMoney-removebg-preview.png" alt="image" class="img">
+            <h4 class="content mg-top">We know to save your time and money</h4>
+            <p class="content">Far far away, behing the world mountains, far from the countries vokalia</p>
+        </div>
+        <div class="box box3">
+            <img src="img/customer-removebg-preview.png" alt="image" class="img">
+            <h4 class="content mg-top">We will bring your new pre-qualified costumers</h4>
+            <p class="content">Far far away, behing the world mountains, far from the countries vokalia</p>
+        </div>
+        <div class="box box4">
+            <img src="img/sales1-removebg-preview.png" alt="image" class="img">
+            <h4 class="content mg-top">We can boost your project sales</h4>
+            <p class="content">Far far away, behing the world mountains, far from the countries vokalia</p>
+        </div>
+    </section>
+    <script>
+        const burger = document.querySelector(".burger");
+        navbar = document.querySelector(".navbar");
+        navList = document.querySelector(".nav-list");
+
+        burger.addEventListener("click", () => {
+            navList.classList.toggle("visibility-resp");
+            navbar.classList.toggle("height-resp");
+        });
+    </script>
+</body>
+
+</html>
